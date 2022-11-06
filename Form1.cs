@@ -16,5 +16,10 @@ namespace ValidationCompetence
             form_Home.Show();
             this.Close();
         }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

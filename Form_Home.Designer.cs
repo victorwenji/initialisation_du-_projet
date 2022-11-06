@@ -50,6 +50,7 @@
             this.buttonCompetence.TabIndex = 24;
             this.buttonCompetence.Text = "COMPETENCE";
             this.buttonCompetence.UseVisualStyleBackColor = true;
+            this.buttonCompetence.Click += new System.EventHandler(this.buttonCompetence_Click);
             // 
             // button2
             // 
@@ -60,6 +61,7 @@
             this.button2.TabIndex = 23;
             this.button2.Text = "RECHERCHE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // textBoxinfo
             // 
@@ -80,6 +82,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "MODIFIER";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // BTNCREATE
             // 
@@ -90,6 +93,7 @@
             this.BTNCREATE.TabIndex = 20;
             this.BTNCREATE.Text = "CREE UN ETUDIANT";
             this.BTNCREATE.UseVisualStyleBackColor = true;
+            this.BTNCREATE.Click += new System.EventHandler(this.BTNCREATE_Click_1);
             // 
             // textBoxRECHERCHE
             // 

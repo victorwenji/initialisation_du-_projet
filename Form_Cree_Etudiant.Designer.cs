@@ -69,6 +69,7 @@
             this.BTNCLEAR.TabIndex = 21;
             this.BTNCLEAR.Text = "CLOSE";
             this.BTNCLEAR.UseVisualStyleBackColor = true;
+            this.BTNCLEAR.Click += new System.EventHandler(this.BTNCLEAR_Click_1);
             // 
             // BTN
             // 
@@ -79,6 +80,7 @@
             this.BTN.TabIndex = 20;
             this.BTN.Text = "ENREGISTRER";
             this.BTN.UseVisualStyleBackColor = true;
+            this.BTN.Click += new System.EventHandler(this.BTN_Click_1);
             // 
             // textBoxREF
             // 

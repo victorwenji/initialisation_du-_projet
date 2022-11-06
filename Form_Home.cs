@@ -17,18 +17,8 @@ namespace ValidationCompetence
         {
             InitializeComponent();
         }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Form_Competence form_Competence = new Form_Competence();
-            form_Competence.Show();
-        }
-        private void BTNCREATE_Click(object sender, EventArgs e)
-        {
-            Form_Cree_Etudiant form_Cree_Etudiant = new Form_Cree_Etudiant();
-            form_Cree_Etudiant.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+      
+        private void button2_Click_1(object sender, EventArgs e)
         {
             string Dataread;
             string chemin = textBoxRECHERCHE.Text;
@@ -41,7 +31,7 @@ namespace ValidationCompetence
             {
                 textBoxinfo.Text = "L'etudiant avec l'id : " + chemin + " n'existe pas";
             }
-            
+
             using (StreamReader sr = new StreamReader(@"D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data\" + chemin + ".json"))
             {
                 Dataread = sr.ReadToEnd();
@@ -51,11 +41,23 @@ namespace ValidationCompetence
             labelPrenom.Text = etudiant.LastName;
             labelRef.Text = etudiant.Referentiel;
         }
-        public void button1_Click(object sender, EventArgs e)
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
-           
             Form_Modifier_Etudiant form_Modifier_Etudiant = new Form_Modifier_Etudiant();
             form_Modifier_Etudiant.Show();
+        }
+
+        private void BTNCREATE_Click_1(object sender, EventArgs e)
+        {
+            Form_Cree_Etudiant form_Cree_Etudiant = new Form_Cree_Etudiant();
+            form_Cree_Etudiant.Show();
+        }
+
+        private void buttonCompetence_Click(object sender, EventArgs e)
+        {
+            Form_Competence form_Competence = new Form_Competence();
+            form_Competence.Show();
         }
     }
 }

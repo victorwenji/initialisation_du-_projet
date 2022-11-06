@@ -18,11 +18,6 @@ namespace ValidationCompetence
             InitializeComponent();
         }
 
-        private void BTNCLEAR_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void Clear()
         {
             txbId.Clear();
@@ -31,7 +26,14 @@ namespace ValidationCompetence
             textBoxREF.Clear();
         }
 
-        private void BTN_Click(object sender, EventArgs e)
+        private void BTNCLEAR_Click_1(object sender, EventArgs e)
+        {
+            Form_Home form_Home = new Form_Home();
+            form_Home.Show();
+            this.Close();
+        }
+
+        private void BTN_Click_1(object sender, EventArgs e)
         {
             var etudiant = new Class_Etudiant
             (txbId.Text,

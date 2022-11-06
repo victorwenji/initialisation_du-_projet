@@ -82,6 +82,7 @@
             this.BTNsave.TabIndex = 27;
             this.BTNsave.Text = "ENREGISTRER";
             this.BTNsave.UseVisualStyleBackColor = true;
+            this.BTNsave.Click += new System.EventHandler(this.BTNsave_Click);
             // 
             // openFileDialog1
             // 
@@ -108,6 +109,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "A- Manager la maîtrise d\'ouvrage d\'un projet SI (MOA)";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BTNCLose
             // 
@@ -118,6 +120,7 @@
             this.BTNCLose.TabIndex = 28;
             this.BTNCLose.Text = "CLOSE";
             this.BTNCLose.UseVisualStyleBackColor = true;
+            this.BTNCLose.Click += new System.EventHandler(this.BTNCLose_Click);
             // 
             // checkBoxA8
             // 

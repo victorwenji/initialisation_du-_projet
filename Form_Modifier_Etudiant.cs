@@ -30,7 +30,12 @@ namespace ValidationCompetence
             textBoxREF.Text = etudiant.Referentiel;
         }
 
-        private void BTN_Click(object sender, EventArgs e)
+        private void BTNCLEAR_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BTN_Click_1(object sender, EventArgs e)
         {
             var etudiant = new Class_Etudiant
            (textBoxId.Text,
@@ -58,7 +63,7 @@ namespace ValidationCompetence
                  "L'etudiant a bien ete Modifier"
                 );
             }
-              this.Close();
+            this.Close();
         }
     }
 }
