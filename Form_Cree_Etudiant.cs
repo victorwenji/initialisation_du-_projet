@@ -43,7 +43,7 @@ namespace ValidationCompetence
             );
             string filename = txbId.Text;
             string json = JsonConvert.SerializeObject(etudiant, Newtonsoft.Json.Formatting.Indented);
-            string chemin = Path.Combine("D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data", "E_" + filename + ".json");
+            string chemin = Path.Combine("D:\\limoge\\Project\\ValidationCompetence\\data", "" + filename + ".json");
             File.WriteAllText(chemin, json);
             MessageBox.Show(
                    "L'etudiant  N° " + filename + " a bien ete enregistrez"

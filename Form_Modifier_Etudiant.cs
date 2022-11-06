@@ -16,8 +16,8 @@ namespace ValidationCompetence
         public Form_Modifier_Etudiant()
         {
             InitializeComponent();
-            openFileDialog1.ShowDialog();
-            var ligne = File.OpenRead(openFileDialog1.FileName);
+            OpF1.ShowDialog();
+            var ligne = File.OpenRead(OpF1.FileName);
             string Dataread;
             using (StreamReader sr = new StreamReader(ligne))
             {
@@ -44,11 +44,11 @@ namespace ValidationCompetence
                textBoxREF.Text
            );
             string ligne = etudiant.Id;
-            string fichier = "E_" + ligne + ".json";
+            string fichier = "" + ligne + ".json";
             if (File.Exists(fichier))
             {
                 string json = JsonConvert.SerializeObject(etudiant, Newtonsoft.Json.Formatting.Indented);
-                string chemin = Path.Combine("D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data", fichier);
+                string chemin = Path.Combine("D:\\limoge\\Project\\ValidationCompetence\\data", fichier);
                 File.WriteAllText(chemin, json);
                 MessageBox.Show(
                  "L'etudiant n'a pas pue etre Modifier"
@@ -57,7 +57,7 @@ namespace ValidationCompetence
             else
             {
                 string json = JsonConvert.SerializeObject(etudiant, Newtonsoft.Json.Formatting.Indented);
-                string chemin = Path.Combine("D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data", fichier);
+                string chemin = Path.Combine("D:\\limoge\\Project\\ValidationCompetence\\data", fichier);
                 File.WriteAllText(chemin, json);
                 MessageBox.Show(
                  "L'etudiant a bien ete Modifier"

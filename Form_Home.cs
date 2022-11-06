@@ -22,8 +22,8 @@ namespace ValidationCompetence
         {
             string Dataread;
             string chemin = textBoxRECHERCHE.Text;
-            string path = Path.Combine("D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data");
-            if (File.Exists(@"D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data\" + chemin + ".json"))
+            string path = Path.Combine("D:\\limoge\\Project\\ValidationCompetence\\data");
+            if (File.Exists(@"D:\limoge\Project\ValidationCompetence\data" + chemin + ".json"))
             {
                 textBoxinfo.Text = "L'etudiant avec l'id : " + chemin + " existe";
             }
@@ -32,7 +32,7 @@ namespace ValidationCompetence
                 textBoxinfo.Text = "L'etudiant avec l'id : " + chemin + " n'existe pas";
             }
 
-            using (StreamReader sr = new StreamReader(@"D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data\" + chemin + ".json"))
+            using (StreamReader sr = new StreamReader(@"D:\limoge\Project\ValidationCompetence\data" + chemin + ".json"))
             {
                 Dataread = sr.ReadToEnd();
             }

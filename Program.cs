@@ -8,6 +8,9 @@ namespace ValidationCompetence
         [STAThread]
         static void Main()
         {
+            ApplicationConfiguration.Initialize();
+            new Form1().Show();
+            Application.Run();
         }
     }
 }

@@ -38,8 +38,8 @@
             this.labelPRENOM = new System.Windows.Forms.Label();
             this.labelNOM = new System.Windows.Forms.Label();
             this.label_Validation_Des_Competence = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label1 = new System.Windows.Forms.Label();
+            this.OpF1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // textBoxId
@@ -141,10 +141,6 @@
             this.label_Validation_Des_Competence.TabIndex = 23;
             this.label_Validation_Des_Competence.Text = "MODIFIER UN ETUDIANT";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -155,6 +151,10 @@
             this.label1.Size = new System.Drawing.Size(67, 38);
             this.label1.TabIndex = 34;
             this.label1.Text = "Id : ";
+            // 
+            // OpF1
+            // 
+            this.OpF1.FileName = "openFileDialog1";
             // 
             // Form_Modifier_Etudiant
             // 
@@ -192,7 +192,7 @@
         private Label labelPRENOM;
         private Label labelNOM;
         private Label label_Validation_Des_Competence;
-        private OpenFileDialog openFileDialog1;
         private Label label1;
+        private OpenFileDialog OpF1;
     }
 }

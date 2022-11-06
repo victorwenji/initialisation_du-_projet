@@ -35,10 +35,10 @@
             this.BTNCREATE = new System.Windows.Forms.Button();
             this.textBoxRECHERCHE = new System.Windows.Forms.TextBox();
             this.label_Validation_Des_Competence = new System.Windows.Forms.Label();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.labelNom = new System.Windows.Forms.Label();
             this.labelRef = new System.Windows.Forms.Label();
             this.labelPrenom = new System.Windows.Forms.Label();
+            this.OFD1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // buttonCompetence
@@ -114,10 +114,6 @@
             this.label_Validation_Des_Competence.TabIndex = 18;
             this.label_Validation_Des_Competence.Text = "VALIDATION DES COMPETENCE POUR ERIS/MS2D";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // labelNom
             // 
             this.labelNom.AutoSize = true;
@@ -151,6 +147,10 @@
             this.labelPrenom.TabIndex = 25;
             this.labelPrenom.Text = "--";
             // 
+            // OFD1
+            // 
+            this.OFD1.FileName = "openFileDialog1";
+            // 
             // Form_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -183,9 +183,9 @@
         private Button BTNCREATE;
         private TextBox textBoxRECHERCHE;
         private Label label_Validation_Des_Competence;
-        private OpenFileDialog openFileDialog1;
         private Label labelNom;
         private Label labelRef;
         private Label labelPrenom;
+        private OpenFileDialog OFD1;
     }
 }
