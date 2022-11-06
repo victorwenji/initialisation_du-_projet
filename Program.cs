@@ -8,16 +8,6 @@ namespace ValidationCompetence
         [STAThread]
         static void Main()
         {
-            //Application.EnableVisualStyles();
-            //ApplicationConfiguration.Initialize();
-            //new Form1().Show(); 
-            //Application.Run();
-
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            //new FrmUser().Show();
-            new Form1().Show();
-            Application.Run();
         }
     }
 }
