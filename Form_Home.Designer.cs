@@ -102,6 +102,7 @@
             this.textBoxRECHERCHE.Name = "textBoxRECHERCHE";
             this.textBoxRECHERCHE.Size = new System.Drawing.Size(509, 43);
             this.textBoxRECHERCHE.TabIndex = 19;
+            this.textBoxRECHERCHE.TextChanged += new System.EventHandler(this.textBoxRECHERCHE_TextChanged);
             // 
             // label_Validation_Des_Competence
             // 
