@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ValidationCompetence
 {
-    internal class Class1_EtudiantMs2d
+    class CompetMs2d 
     {
         public bool A_RNCP34408BC01 { get; set; }
         public bool A1 { get; set; }
@@ -18,7 +18,7 @@ namespace ValidationCompetence
         public bool A7 { get; set; }
         public bool A8 { get; set; }
 
-        public Class1_EtudiantMs2d
+        public CompetMs2d
             (
                 bool a_RNCP34408BC01,
                 bool a1,

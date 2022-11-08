@@ -27,7 +27,7 @@ namespace ValidationCompetence
             textBoxId.Text = etudiant.Id;
             textBoxNOM.Text = etudiant.Name;
             textBoxpRENOM.Text = etudiant.LastName;
-            textBoxREF.Text = etudiant.Referentiel;
+            comboBox1.Text = etudiant.Referentiel;
         }
 
         private void BTNCLEAR_Click(object sender, EventArgs e)
@@ -38,10 +38,11 @@ namespace ValidationCompetence
         private void BTN_Click_1(object sender, EventArgs e)
         {
             var etudiant = new Class_Etudiant
-           (textBoxId.Text,
+            (   
+                textBoxId.Text,
                textBoxNOM.Text,
                textBoxpRENOM.Text,
-               textBoxREF.Text
+               comboBox1.Text
            );
             string ligne = etudiant.Id;
             string fichier = "" + ligne + ".json";

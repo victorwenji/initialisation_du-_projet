@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.Design;
 
 namespace ValidationCompetence
 {
@@ -16,19 +18,29 @@ namespace ValidationCompetence
         public Form_Competence()
         {
             InitializeComponent();
-            cutomizeDesing();
-            openFileDialog1 = new OpenFileDialog();
-            string file = openFileDialog1.FileName;
+            oPD1.ShowDialog();
+            var file = File.OpenRead(oPD1.FileName);
             string Dataread;
             using (StreamReader sr = new StreamReader(file))
             {
                 Dataread = sr.ReadToEnd();
             }
             Class_Etudiant etudiant = JsonConvert.DeserializeObject<Class_Etudiant>(Dataread);
+            label5.Text = etudiant.Date.ToString();
             label4.Text = etudiant.Id;
             label1.Text = etudiant.Name;
             label2.Text = etudiant.LastName;
             label3.Text = etudiant.Referentiel;
+            checkBoxA.Checked = etudiant.A_RNCP34408BC01;
+            checkBoxA1.Checked = etudiant.A1;
+            checkBoxA2.Checked = etudiant.A2;
+            checkBoxA3.Checked= etudiant.A3;
+            checkBoxA4.Checked = etudiant.A4;
+            checkBoxA5.Checked = etudiant.A5;
+            checkBoxA6.Checked = etudiant.A6;
+            checkBoxA7.Checked = etudiant.A7;
+            checkBoxA8.Checked = etudiant.A8;   
+            cutomizeDesing();
         }
 
         private void cutomizeDesing()
@@ -54,26 +66,34 @@ namespace ValidationCompetence
                 panel.Visible = false;
         }
 
-        private void BTNsave_Click(object sender, EventArgs e)
-        {
+      
 
-            string filename = label4.Text;
-            var etudiantMs2d = new Class1_EtudiantMs2d
-           (
-                checkBoxA.Checked,
-                checkBoxA1.Checked,
-                checkBoxA2.Checked,
-                checkBoxA3.Checked,
-                checkBoxA4.Checked,
-                checkBoxA5.Checked,
-                checkBoxA6.Checked,
-                checkBoxA7.Checked,
+        private void button1_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelsousA);
+        }
+
+        private void BTNsave_Click_1(object sender, EventArgs e)
+        {
+           
+            var etudiant = new Class_Etudiant
+            (
+                checkBoxA.Checked ,
+                checkBoxA1.Checked ,
+                checkBoxA2.Checked ,
+                checkBoxA3.Checked ,
+                checkBoxA4.Checked ,
+                checkBoxA5.Checked ,
+                checkBoxA6.Checked ,
+                checkBoxA7.Checked ,
                 checkBoxA8.Checked
-            );
-            string fichier = "E_" + filename + ".json";
+             );
+
+            //string filename = etudiant.Id;
+            string fichier = "loic.json";
             if (File.Exists(fichier))
             {
-                string json = JsonConvert.SerializeObject(etudiantMs2d, Newtonsoft.Json.Formatting.Indented);
+                string json = JsonConvert.SerializeObject(etudiant, Newtonsoft.Json.Formatting.Indented);
                 string chemin = Path.Combine("D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data", fichier);
                 File.WriteAllText(chemin, json);
                 MessageBox.Show(
@@ -82,26 +102,31 @@ namespace ValidationCompetence
             }
             else
             {
-                string json = JsonConvert.SerializeObject(etudiantMs2d, Newtonsoft.Json.Formatting.Indented);
-                //string chemin = Path.Combine("D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data", "E_" + ligne + ".json");
+                string json = JsonConvert.SerializeObject(etudiant, Newtonsoft.Json.Formatting.Indented);
                 string chemin = Path.Combine("D:\\limoge\\Project\\Interface_De_Validation\\Interface_De_Validation\\data", fichier);
                 File.WriteAllText(chemin, json);
                 MessageBox.Show(
                  "L'etudiant a bien ete Modifier"
                 );
             }
+
         }
 
-        private void BTNCLose_Click(object sender, EventArgs e)
+        private void BTNCLose_Click_1(object sender, EventArgs e)
         {
             Form_Home form_home = new Form_Home();
             form_home.Show();
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void checkBoxA_CheckedChanged(object sender, EventArgs e)
         {
-            showSubMenu(panelsousA);
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

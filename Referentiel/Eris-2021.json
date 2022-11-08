@@ -1,0 +1,117 @@
+{
+  "Nom referentiel": "ERIS",
+  "ListeDesBlocs": [
+    {
+      "NomBloc": "A - JRNCP34408BC01 / Piloter la maîtrise d'ouvrage d'un projet informatique",
+      "Annee": 2,
+      "Competence": [
+        {
+          "id": "A01",
+          "NomCompetence": "Analyser et reformuler le besoin du client",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "A02",
+          "NomCompetence": "Rédiger les spécifications fonctionnelles et techniques",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "A03",
+          "NomCompetence": "Elaborer le cahier des charges",
+          "TypeMajeurMineur": 1,
+          "Validation": 0
+        },
+        {
+          "id": "A04",
+          "NomCompetence": "Estimer les coûts, les délais",
+          "TypeMajeurMineur": 1,
+          "Validation": 0
+        },
+        {
+          "id": "A05",
+          "NomCompetence": "Analyser les risques liés à la réalisation du projet",
+          "TypeMajeurMineur": 1,
+          "Validation": 0
+        },
+        {
+          "id": "A06",
+          "NomCompetence": "Analyser un dossier de consultation (DCE) et en préparer la réponse",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "A07",
+          "NomCompetence": "Maîtriser l'utilisation des principaux diagrammes UML Modéliser par le biais de diagrammes ou de schémas",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "A08",
+          "NomCompetence": "Vérifier la conformité de la solution par rapport aux spécifications fonctionnelles",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        }
+      ]
+    },
+    {
+      "NomBloc": "B - RNCP34407BC02 / Mettre en oeuvre un projet informatique",
+      "Annee": 1,
+      "Competence": [
+        {
+          "id": "B01",
+          "NomCompetence": "Décomposer le projet en livrables et tâches",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "B02",
+          "NomCompetence": "Planifier un projet",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "B03",
+          "NomCompetence": "Elaborer des tableaux de bord de suivi",
+          "TypeMajeurMineur": 1,
+          "Validation": 0
+        },
+        {
+          "id": "B04",
+          "NomCompetence": "Choisir les outils permettant de suivre l'évolution du projet",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "B05",
+          "NomCompetence": "Déterminer les ratios d'activités et de performance",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "B06",
+          "NomCompetence": "Choisir la méthode de gestion de projet adaptée au contexte et au client (classique, agilité, ...)",
+          "TypeMajeurMineur": 1,
+          "Validation": 0
+        },
+        {
+          "id": "B07",
+          "NomCompetence": "Intégrer un référentiel de bonnes pratiques dans la gestion de projet",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        },
+        {
+          "id": "B08",
+          "NomCompetence": "Collaborer à la réalisation du projet et à son suivi dans le respect des lignes de conduite",
+          "TypeMajeurMineur": 1,
+          "Validation": 0
+        },
+        {
+          "id": "B09",
+          "NomCompetence": "B09 - Assurer un reporting de ses activités",
+          "TypeMajeurMineur": 0,
+          "Validation": 0
+        }
+      ]
+    }

@@ -23,7 +23,7 @@ namespace ValidationCompetence
             txbId.Clear();
             textBoxNOM.Clear();
             textBoxpRENOM.Clear();
-            textBoxREF.Clear();
+            comboBox1.ResetText();
         }
 
         private void BTNCLEAR_Click_1(object sender, EventArgs e)
@@ -35,12 +35,16 @@ namespace ValidationCompetence
 
         private void BTN_Click_1(object sender, EventArgs e)
         {
+            
             var etudiant = new Class_Etudiant
-            (txbId.Text,
+            (   
+                txbId.Text,
                 textBoxNOM.Text,
                 textBoxpRENOM.Text,
-                textBoxREF.Text
-            );
+                comboBox1.Text
+
+             );
+
             string filename = txbId.Text;
             string json = JsonConvert.SerializeObject(etudiant, Newtonsoft.Json.Formatting.Indented);
             string chemin = Path.Combine("D:\\limoge\\Project\\ValidationCompetence\\data", "" + filename + ".json");
